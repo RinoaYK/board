@@ -16,7 +16,7 @@ classDiagram
         id: long
         name: string
     }
-    class BoardColumn {
+    class BoardColumns {
         id: long
         name: string
         kind: string
@@ -25,15 +25,15 @@ classDiagram
     class Card {
         id: long
         title: string
-        description: string
-        createdAt: OffsetDateTime
+        description: string   
+        createdAt: OffsetDateTime     
     }
     class Block {
-        id: long
-        blockCause: string
-        blockDate: OffsetDateTime
-        unblockCause: string
-        unblockDate: OffsetDateTime
+        id: long        
+        blockedAt: OffsetDateTime
+        blockReason: string
+        unblockedAt: OffsetDateTime
+        unblockReason: string
     }
 
   Board "1" *-- "N" BoardColumn
