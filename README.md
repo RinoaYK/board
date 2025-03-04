@@ -5,7 +5,7 @@ Board de Tarefas com JAVA - Dio - Decola tech 2025
  - **Java 21**
  - **Spring Boot 3.4.3**
  - **Spring Data JPA**
- - **OpenAPI (Swagger)**
+ - **Liquibase**
  - **MySQL**
 
 ## Diagrama de Classes (Domínio da API)
@@ -36,8 +36,8 @@ classDiagram
         unblockReason: string
     }
 
-  Board "1" *-- "N" BoardColumn
-  BoardColumn "1" *-- "N" Card
+  Board "1" *-- "N" BoardColumns
+  BoardColumns "1" *-- "N" Card
   Card "1" *-- "N" Block
     
 ```
