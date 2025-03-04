@@ -6,7 +6,6 @@ import dio.board.exception.CardFinishedException;
 import dio.board.exception.EntityNotFoundException;
 import dio.board.persistence.dao.BlockDAO;
 import dio.board.persistence.dao.CardDAO;
-import dio.board.persistence.entity.BoardColumnKindEnum;
 import dio.board.persistence.entity.CardEntity;
 import lombok.AllArgsConstructor;
 

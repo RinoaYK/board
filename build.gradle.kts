@@ -25,12 +25,8 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-	// https://mvnrepository.com/artifact/org.liquibase/liquibase-core
 	implementation("org.liquibase:liquibase-core:4.31.1")
-
 	compileOnly("org.projectlombok:lombok")
-
-	// https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
 	implementation("com.mysql:mysql-connector-j:9.2.0")
 	runtimeOnly("com.mysql:mysql-connector-j")
 	annotationProcessor("org.projectlombok:lombok")
